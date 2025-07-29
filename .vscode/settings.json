@@ -1,0 +1,39 @@
+{
+    "python.defaultInterpreterPath": "./venv/bin/python",
+    "python.terminal.activateEnvironment": true,
+    "python.linting.enabled": true,
+    "python.linting.pylintEnabled": false,
+    "python.linting.flake8Enabled": true,
+    "python.formatting.provider": "black",
+    "python.formatting.blackArgs": [
+        "--line-length=88"
+    ],
+    "python.testing.pytestEnabled": false,
+    "python.testing.unittestEnabled": true,
+    "python.testing.unittestArgs": [
+        "-v",
+        "-s",
+        "./rides",
+        "-p",
+        "test*.py"
+    ],
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/*.pyc": true,
+        "**/.pytest_cache": true,
+        "**/node_modules": true
+    },
+    "editor.formatOnSave": true,
+    "editor.codeActionsOnSave": {
+        "source.organizeImports": "explicit"
+    },
+    "terminal.integrated.env.linux": {
+        "DJANGO_SETTINGS_MODULE": "rides_api.settings"
+    },
+    "terminal.integrated.env.osx": {
+        "DJANGO_SETTINGS_MODULE": "rides_api.settings"
+    },
+    "terminal.integrated.env.windows": {
+        "DJANGO_SETTINGS_MODULE": "rides_api.settings"
+    }
+}
